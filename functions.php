@@ -1,5 +1,22 @@
 <?php
 
+// STOP WORDPRESS REMOVING TAGS
+function tags_tinymce_fix( $init )
+{
+  // html elements being stripped
+  $init['extended_valid_elements'] = 'div[*],article[*]';
+  // don't remove line breaks
+  $init['remove_linebreaks'] = false;
+  // convert newline characters to BR
+  $init['convert_newlines_to_brs'] = true;
+  // don't remove redundant BR
+  $init['remove_redundant_brs'] = false;
+  // pass back to wordpress
+  return $init;
+}
+add_filter('tiny_mce_before_init', 'tags_tinymce_fix');
+
+
 function additional_custom_styles() {
 
     /*Enqueue The Styles*/
@@ -7,6 +24,10 @@ function additional_custom_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'additional_custom_styles' );
 
+function additional_custom_scripts() {
+	wp_enqueue_script( 'coolstuff', get_stylesheet_directory_uri() . '/script.js', array('jquery'), '6.0.0', true);
+}
+add_action( 'wp_enqueue_scripts', 'additional_custom_scripts' );
 
 
 add_theme_support('menus');

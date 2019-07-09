@@ -1,9 +1,9 @@
 /*
-Theme Name: GreenSlugg
-Theme URI: westonmedia.co/greenslugg
-Author: Matt Travis
+Theme Name: Dogs Of North Texas
+Theme URI: westonmedia.co/dogsofnorthtexas
+Author: Matt Schmidt
 Author URI: westonmedia.co
-Description: Site for Customer GreenSlugg
+Description: Site for Customer Dogs of North Texas
 Version: 1.0
 Tags: Custom
 */
@@ -16,22 +16,10 @@ body {
   margin: 0;
 }
 
-h1 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 3.0em;
-}
-
-h2 {
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: 1.5px;
 	font-family: 'Oswald', sans-serif;
-}
-
-h3 {
-  font-family: 'Oswald', sans-serif;
-}
-
-h4 {
-  text-align: center;
-  font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
 }
 
 nav {
@@ -39,124 +27,186 @@ nav {
   font-family: 'Oswald', sans-serif;
 }
 
-input {
-  display: none;
-  margin: 0;
-  padding: 0;
-}
-
 label {
   margin: auto 20px;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+}
+
+textarea {
+	display: block;
+  margin: 10px auto;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+}
+
+button {
+	letter-spacing: 1px;
 }
 
 /********************Class********************/
 
 
-.front-page-heading-text h2 {
-	font-size: 3.0rem;
+.header-above-nav {
+	/*background-color: #4caf50;*/
+	background-color: #03a9f4;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	padding-right: 25px;
+	padding-left: 25px;
 }
 
-.edits-to-nav-heading {
-  display: flex;
-  margin-right: 0;
-  padding-top: 0;
+.header-contact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.remove-nav-padding {
-  padding-top: 0;
-  padding-bottom: 0;
+.header-contact div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 5px;
 }
 
-.header-section {
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-  color: white;
-
+.header-contact img {
+	width: 20px;
+	height: auto;
+	padding-right: 5px;
 }
 
-.header-section-info {
-  position: absolute;
-  left: 64px;
-  right: 60px;
-  top: 100px;
-  max-width: 75%;
-}
-
-.h1-header-image {
-  display: inline-block;
-  text-align: left;
-}
-
-.p-header-image {
-	font-size: 1.2rem;
-
-}
-
-.profile-image {
-  max-width: 40px;
-  max-height: 40px;
-  flex-grow: 1;
-  margin: 6px 8px 0 0;
-}
-
-.logo {
-  margin: 7px 25px 0 0;
-  flex-grow: 5;
-  justify-content: center;
-}
-
-.h3-large {
-  font-size: 1.1em;
-}
-
-.h3-small {
-  font-size: .95em;
-
-}
-
-.menu-item {
-  margin: auto 10px;
-  font-size: 1.1em;
-  text-align: center;
-  text-transform: uppercase;
-
-}
-
-.menu-item a {
-  color: white;
-  opacity: 0.6;
-}
-
-.menu-item a:hover {
-  color: #33cc33;
-  opacity: 1;
-}
-
-
-.h3-header-image {
-  text-align: left;
+.header-contact p {
+	margin: auto;
+	font-size: 1.0em;
+	padding-right: 10px;
 }
 
 .social-media-header {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  position: absolute;
-  right: 5px;
+  justify-content: center;
+  margin: 15px;
 }
 
 .social-media-icon-header {
-  height: 40px;
-  width: 40px;
-  margin: 5px 5px 5px 5px;
+  height: 20px;
+  width: 20px;
+  margin: 10px 5px;
 }
 
+.header-section {
+  height: 75vh;
+  background-size: cover;
+  background-position: top;
+  color: white;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-section-info {
+  margin: auto;
+  width: 85%;
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+}
+
+.header-section-info h2 {
+	font-size: 5em;
+}
+
+.header-section-info p {
+	font-size: 1.8em;
+}
+
+.btn {
+	border-radius: 0;
+}
+
+#nav-container-box {
+  box-shadow: 0 0 3px black;
+	width: 100%;
+	margin: 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.inside-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger {
+	display: none;
+	cursor: pointer;
+	margin: auto 10px auto 0;
+}
+
+.burger div {
+	width: 20px;
+	height: 2px;
+	background-color: black;
+	margin: 5px;
+}
+
+.logo-image {
+  vertical-align: baseline;
+  width: 100px;
+  height: auto;
+  margin: 10px 10px 5px 0;
+}
+
+.nav-ul-list {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: baseline;
+  padding: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.menu-item {
+  list-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: black;
+ }
+
+.menu-item a:hover {
+  color: #f04400;
+  opacity: 0.8;
+  text-decoration: none;}
 
 .middle-section {
-  background-color: white;
-  padding-top: 35px;
-  padding-bottom: 35px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: -125px;
+	height: auto;
 }
 
 .flex-services {
@@ -167,6 +217,7 @@ label {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  background-color: white;
 }
 
 .flex-services-box {
@@ -177,7 +228,7 @@ label {
 }
 
 .flex-services-box:hover {
-  box-shadow: -2px 2px 8px gray;
+  box-shadow: -2px 2px 8px #484848;
 }
 
 .images-services {
@@ -189,48 +240,263 @@ label {
   opacity: 0.85;
 }
 
+.about-snippet {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 1250px;
+	padding: 50px 15px;
+	height: auto;
+}
+
+.about-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	margin-right: 15px;
+	width: 100%;
+}
+
+.about-info h6 {
+
+}
+
+.about-info h3 {
+}
+
+.title-line-sub {
+	background-color: black;
+	width: 175px;
+	height: 2px;
+	margin: 5px 0 15px 0;
+}
+
+.about-info p {
+}
+
+.about-images {
+	margin-left: 15px;
+	display: grid;
+  	grid-template-columns: repeat(12);
+	grid-template-rows: repeat(12);
+	grid-gap: 0;
+	width: 100%;
+	height: 450px;
+}
+
+.about-images-ind {
+	background-size: cover;
+	box-shadow: -1px 1px 5px black;
+}
+
+#abt-img-one {
+	background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_5854.jpg');
+	background-position: top right;
+	grid-column: 4 / 13;
+	grid-row: 1 / 8;
+}
+
+#abt-img-two {
+	background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_6007.jpg');
+	background-position: top;
+	grid-column: 5 / 12;
+	grid-row: 6 / 12;
+}
+
+#abt-img-three {
+	background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_6709-e1562462795989.jpg');
+	background-position: top right;
+	grid-column: 1 / 8;
+	grid-row: 4 / 10;
+}
+
+.counters {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	max-width: 1250px;
+	margin: 0 15px 50px 15px;
+}
+
+.ind-counter {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+
+.ind-counter img {
+	width: 75px;
+	height: auto;
+}
+
 .bottom-section {
-  background-color: darkgray;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.support-heading {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  max-width: 1300px;
-  color: white;
-}
-
-.patreon-paypal-box {
-	margin: 0 auto 0;
-	width: 50%;
-}
-
-.patreon-paypal-buttons {
-
-}
-
-.patreon-widget {
-	width: 177px;
-}
-
-.lower-bottom-section {
-  padding-top: 50px;
-  padding-bottom: 50px;
   background-color: white;
 }
 
-.contact-section {
-  width: 75%;
-	max-width: 1300px;
-  margin: auto;
+.support-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	align-items: center;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  color: black;
+  background-color: whitesmoke;
+	padding: 50px 15px;
+}
 
+.support-heading p {
+	width: 75%;
+	text-align: center;
+}
+
+.pup-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	max-width: 1250px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	grid-gap: 1px;
+}
+
+.pup-grid-item {
+	height: 250px;
+	background-size: cover;
+	background-position: top;
+}
+
+.pgi-one {
+	background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_6035-e1562473719366.jpg');
+}
+
+.pgi-two {
+	background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_5853.jpg');
+}
+
+.pgi-three {
+	background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_6767.jpg');
+}
+
+.pgi-four {
+	background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_6174.jpg');
+}
+
+.pgi-five {
+	background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_6395.jpg');
+}
+
+.pgi-six {
+	background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_5164.jpg');
+}
+
+.pgi-seven {
+	background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/8633c139-0a19-42e9-b320-cbba139d874c.jpg');
+}
+
+.pgi-eight {
+	background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_5110.jpg');
+}
+
+.testimonial-section-wrapper {
+	text-align: center;
+	padding: 50px 0;
+}
+
+.testimonial-section {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 1250px;
+	margin: auto;
+}
+
+.testimonial {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 5px;
+	background-color: white;
+	padding: 35px;
+	text-align: center;
+	max-width: 320px;
+}
+
+.testimonial p {
+	padding-bottom: 15px;
+	font-style: italic;
+}
+
+.test-img {
+	border-radius: 50%;
+	width: 75px;
+	height: auto;
+	margin: 5px;
+}
+
+.lower-bottom-section {
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  background-color: #03a9f4;
+}
+
+.call-to-action {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 90%;
+	max-width: 1000px;
+	margin: 50px auto;
+	color: whitesmoke;
+}
+
+.call-to-action h2 {
+	margin-bottom: 0;
+max-width: 65%;
+	padding-right: 15px;
+}
+
+.call-to-action button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5em;
+}
+
+.call-to-action button img {
+	width: 35px;
+	height: auto;
+	padding-right: 10px;
+}
+
+.contact-section {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_6706.jpg');
+	background-size: cover;
+	background-position: top;
+  background-color: #303030;
+	background-blend-mode: multiply;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.contact-section h3 {
+	color: white;
+}
+
+.contact-section p {
+	color: white;
 }
 
 .footer-section {
@@ -238,6 +504,7 @@ label {
   padding: 10px;
   display: flex;
   flex-direction: column;
+	background-color: whitesmoke;
 }
 
 .social-media {
@@ -250,40 +517,41 @@ label {
 .social-media-icon {
   height: 40px;
   width: 40px;
-  margin: 5px 5px 5px 5px;
+  margin: 5px;
 }
 
 /********************ID********************/
 
 #primary {
 	margin: 10px;
-
 }
-
-
 
 #flex-services-box-1 {
   border-style: solid;
-  border-width: 0 1px 0 0;
+  border-width: 1px 0.5px 1px 1px;
   border-color: gray;
 }
 
 #flex-services-box-2 {
   border-style: solid;
-  border-width: 0 1px 0 1px;
+  border-width: 1px 0.5px 1px 0.5px;
   border-color: gray;
 }
 
 #flex-services-box-3 {
   border-style: solid;
-  border-width: 0 1px 0 1px;
+  border-width: 1px 0.5px 1px 0.5px;
   border-color: gray;
 }
 
 #flex-services-box-4 {
   border-style: solid;
-  border-width: 0 0 0 1px;
+  border-width: 1px 1px 1px 0.5px;
   border-color: gray;
+}
+
+.cf-two {
+  display: none;
 }
 
 /********************Pages********************/
@@ -321,6 +589,31 @@ label {
 	margin-top: 15px;
 	width: 150px;
 	border-radius: 50%;
+}
+
+
+/*****Services Page*****/
+
+.service-img {
+  width: 128px;
+  height: auto;
+  margin: 10px;
+}
+
+.service-odd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-even {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-descript {
+  margin: 10px;
 }
 
 
@@ -491,6 +784,55 @@ hr {
 	margin-bottom: 0;
 }
 
+#e-form-primary-sidebar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.sidebar-email-form {
+	font-family: 'Oswald', sans-serif;
+	padding: 2px;
+
+}
+
+.primary-sidebar-email {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-style: solid;
+	border-radius: 5%;
+	border-width: 1px;
+	box-shadow: 1px 1px 2px gray;
+	padding: 5px;
+	background-color: whitesmoke;
+	margin: 15px auto;
+	min-width: 250px;
+	max-width: 300px;
+}
+
+.primary-sidebar-email p {
+	font-size: 0.8em;
+	margin-bottom: 5px;
+}
+
+.e-submit {
+	background-color: red;
+	letter-spacing: 1px;
+	border-style: solid;
+	border-color: black;
+	color: whitesmoke;
+	padding: 3px 7px;
+}
+
+.fp-heading h5 {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
 /*****Sidebar-Widgets*****/
 
 .sidebar-widget-title, .pages-widget-title {
@@ -545,12 +887,25 @@ hr {
 
 
 /********************Media****************/
+
+
+
 @media (max-width: 1000px) {
   body {}
 
-  .middle-section {
-    padding-top: 25px;
-    padding-bottom: 25px;
+	.header-section-info h2 {
+		font-size: 3.5em;
+	}
+
+	.header-section-info p {
+	font-size: 1.5em;
+}
+
+.middle-section {
+	margin-top: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+	height: auto;
   }
 
   .flex-services {
@@ -558,12 +913,14 @@ hr {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0px;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: auto;
+    margin-right: auto;
+	width: 85%;
   }
 
   .flex-services-box {
     max-width: 600px;
+	  width: 100%;
   }
 
   #flex-services-box-1 {
@@ -594,23 +951,44 @@ hr {
     margin: 0;
   }
 
-.bottom-section {
-  padding-top: 40px;
-  padding-bottom: 40px;
+.about-snippet {
+	flex-direction: column;
+	width: 85%;
 }
 
-.lower-bottom-section {
-  padding-top: 40px;
-  padding-bottom: 40px;
+.about-info {
+	align-items: center;
+	text-align: center;
+	margin-right: 0;
+	margin-bottom: 10px;
+}
 
+.about-info p {
+}
+
+.about-images {
+	margin-left: 0;
+}
+
+.about-images img {
+	width: 100%;
 }
 
 .support-heading {
-    width: 85%;
-  }
+	padding-right: 15px;
+    padding-left: 15px;
+}
 
-.contact-section {
-		width: 85%;
+.lower-bottom-section {
+	}
+
+.testimonial-section {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+	.testimonial {
+		margin: 5px;
 	}
 
 .latests-posts-main-contain {
@@ -643,52 +1021,143 @@ hr {
 
 @media (max-width: 700px) {
 
-.header-section {
-	height: 400px;
+.header-above-nav {
+	flex-direction: column;
+	justify-content: center;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.header-contact {
+	flex-wrap: wrap;
+}
+
+.header-contact div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2px 5px;
+}
+
+.header-contact img {
+	width: 15px;
+	height: auto;
+	padding-right: 3px;
+}
+
+.header-contact p {
+	margin: auto;
+	font-size: 0.9em;
+	padding-right: 0;
+}
+
+.header-social img {
+	margin: 5px 0;
+	width: 15px;
+	height: auto;
+}
+
+.nav-container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.burger {
+	display: block;
+}
+
+.logo-image {
+  width: 50px;
+  margin: 5px 5px 0 0;
+}
+
+.nav-ul-list {
+	display: none;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	right:0;
+	padding: 0;
+	height: auto;
+	width: 100%;
+	background-color: white;
+	z-index: 1;
 	}
 
-.header-section-info {
-    position: relative;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    text-align: center;
+.menu-item {
+	padding: 5px 0 5px 0;
+	text-align: center;
+}
 
+.menu-item a {
+
+}
+
+.nav-active {
+	display: block;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	right:0;
+	padding: 0;
+	height: auto;
+	width: 100%;
+	background-color: white;
+	z-index: 1;
+}
+
+.header-section {
+	}
+
+.header-section-info h2 {
+	font-size: 3em;
   }
 
-.front-page-heading-text h2 {
-	font-size: 2.5rem;
-    text-align: center;
-    padding-top: 40px;
-
+.header-section-info p {
+	font-size: 1.2em;
   }
 
-.social-media-header {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-  }
-
-.social-media-icon-header {
-    height: 40px;
-    width: 40px;
-    margin: 5px 5px 5px 5px;
-  }
+.flex-services {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
 
 .flex-services-box {
     padding: 15px;
   }
 
-.middle-section {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
+.about-snippet {
+		width: 100%;
+	}
+
+.pup-grid {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.testimonial-section {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.testimonial {
+	max-width: 400px;
+}
+
+.call-to-action {
+	flex-direction: column;
+	text-align: center;
+}
+
+.call-to-action h2 {
+	max-width: 100%;
+	padding-right: 0;
+}
+
+.call-to-action button {
+	margin-top: 15px;
+}
 
 .social-media-icon {
     margin: 5px 3px 5px 3px;
@@ -714,73 +1183,74 @@ hr {
 	margin-top: 20px;
 }
 
+.cf-one {
+	display: none;
+	}
+
+.cf-two {
+  display: block;
+}
+
 @media (max-width: 475px) {
 
-  .header-section-info {
-    position: relative;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    text-align: center;
-	max-width: 85%;
-
-  }
-
-.front-page-heading-text h2 {
-	font-size: 2.25rem;
-    padding-top: 25px;
-  }
-
-  .button-edit-small {
-    padding: 3px 6px;
-	margin: 1px;
-  }
-
-  .social-media-header {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-  }
-
-  .social-media-icon-header {
-    height: 40px;
-    width: 40px;
-    margin: 5px 5px 5px 5px;
-  }
-
-  .services-no-text{
-  display: none;
+.header-above-nav {
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
-.support-heading {
-  width: 90%;
+.header-contact div {
+	padding: 2px 5px;
 }
 
-.contact-section {
-		width: 90%;
+.header-contact img {
+	width: 15px;
+	height: auto;
+	padding-right: 3px;
+}
+
+.header-contact p {
+	font-size: 0.9em;
+}
+
+.header-social img {
+	margin: 0 0 2px 0;
+}
+
+ .header-section-info {
+  }
+
+.social-media-icon-header {
+    height: 30px;
+    width: 30px;
+  }
+
+.flex-services-box h4 {
+	font-size: 1.2rem;
 	}
+
+.flex-services-box p {
+	font-size: 0.8rem;
+	}
+
+.flex-services-box button {
+	font-size: 0.8rem;
+}
+
+.pup-grid-item {
+	height: 150px;
+}
 
 .latests-flex {
 	width: 100%;
 	margin-top: 15px;
 	margin-bottom: 15px;
-
 }
 
-.bottom-section {
-  padding-top: 25px;
-	padding-bottom: 25px;
+.about-images {
+	height: 300px;
 }
 
 .lower-bottom-section {
-  padding-top: 25px;
-  padding-bottom: 25px;
 
 }
 
@@ -858,4 +1328,16 @@ hr {
 	border-radius: 50%;
 }
 
+	.support-heading {
+	padding-right: 10px;
+    padding-left: 10px;
 }
+
+}
+
+@media (max-width: 400px) {
+
+.about-images {
+	height: 250px;
+}
+	}

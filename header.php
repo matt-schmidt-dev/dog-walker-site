@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>GreenSlugg</title>
+  <title>Dogs og North Texas - Dallas Dog Walkers</title>
 	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
-	<link rel="icon" type="img/jpg" href="http://matthewtravisblog.com/wp-content/uploads/2019/02/gs-muse-profile.png">
+	<link rel="icon" type="img/jpg" href="http://dogsofnorthtexas.com/wp-content/uploads/2019/06/DNT-logo.jpg">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Lora|Oswald" rel="stylesheet">
 
@@ -18,43 +18,73 @@
 <!-- Header -->
 
   <div class="none">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top remove-nav-padding">
-      <a class="navbar-brand edits-to-nav-heading" href="http://localhost/wordpress/">
-        <img class="profile-image" src="http://matthewtravisblog.com/wp-content/uploads/2019/02/gs-muse-profile.png" alt="Profile-Small">
-        <h3 class="logo"><span class="h3-large">G</span><span class="h3-small">REEN</span><span class="h3-large">S</span><span class="h3-small">LUGG</span></h3>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+	<div class="header-above-nav">
+		<div class="header-contact">
+			<div class="location-header">
+				<img src="http://dogsofnorthtexas.com/wp-content/uploads/2019/07/maps-and-flags-1.png">
+				<p>
+					Dallas, TX
+				</p>
+			</div>
+			<div class="phone-header">
+				<img src="http://dogsofnorthtexas.com/wp-content/uploads/2019/07/phone-receiver.png">
+				<p>
+					214-502-4532
+				</p>
+			</div>
+			<div class="email-header">
+				<img src="http://dogsofnorthtexas.com/wp-content/uploads/2019/07/envelope.png">
+				<p>
+					dogsofnorthtexas@gmail.com
+				</p>
+			</div>
+		</div>
+		<div class="header-social">
+			<a href="https://www.facebook.com/dogsofnorthtexas">
+      <img class="social-media-icon-header" src="http://dogsofnorthtexas.com/wp-content/uploads/2019/07/facebook.png" alt="facebook">
+    </a>
+    <a href="https://twitter.com/dogsofnorthtexas">
+      <img class="social-media-icon-header" src="http://dogsofnorthtexas.com/wp-content/uploads/2019/07/twitter.png" alt="twitter">
+    </a>
+    <a href="https://www.instagram.com/dogsofnorthtexas">
+      <img class="social-media-icon-header" src="http://dogsofnorthtexas.com/wp-content/uploads/2019/07/instagram.png" alt="instagram">
+    </a>
+		</div>
+	</div>
+    <div id="nav-container-box">
+  <nav class="nav-container">
+	<div class="inside-nav-container">
+		<div class="burger">
+			<div class="line-1">
 
-        <?php
-		  	$defaults = array(
-				'container' => 'ul',
-				'theme_location' => 'top-menu',
-				'menu_class' => 'navbar-nav ml-auto'
-			);
+			</div>
+			<div class="line-2">
 
-		   wp_nav_menu( $defaults );
-		?>
+			</div>
+			<div class="line-3">
 
-		  <!--<ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="https://matthewtravisblog.com">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://matthewtravisblog.com/about">ABOUT</a>
-          </li>
-		  <li class="nav-item">
-            <a class="nav-link" href="https://matthewtravisblog.com/blog">BLOG</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://matthewtravisblog.com/media">MEDIA</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://matthewtravisblog.com/contact">CONTACT</a>
-          </li>
-        </ul>-->
-      </div>
-    </nav>
+			</div>
+		</div>
+    <a id="logo-image-a" href="https://libertytalks.net">
+      <img class="logo-image" src="http://dogsofnorthtexas.com/wp-content/uploads/2019/06/DNT-logo.jpg" alt="Liberty_Talks_Podcast_Logo">
+    </a>
+
+		<?php wp_nav_menu( array(
+
+			'theme_location' => 'top-menu',
+			'menu_class' => 'nav-ul-list'
+						  )
+		); ?>
+
+		<!--
+    <ul class="nav-ul-list">
+      <li class="nav-item">
+        <a class="ind-nav-link" href="">HOME</a>
+      </li>
+    </ul>
+-->
+
+	</div>
+  </nav>
+</div>
   </div>

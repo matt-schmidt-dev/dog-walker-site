@@ -1,11 +1,9 @@
-<div id="primary" class="sidebar">
-
-    <?php do_action( 'before_sidebar' ); ?>
-    <?php if ( ! dynamic_sidebar( 'primary-sidebar' ) ) : ?>
-	<?php endif; ?>
+<div id="original" class="sidebar">
 
 	<div class="primary-top">
-		<h3 class="sidebar-widget-title">Latests Posts</h3>
+		<h3>Latests Posts</h3>
+
+		<hr>
 
 <?php $i = 1; if ( have_posts() ) : while ( have_posts() && $i < 5) : the_post(); ?>
 
@@ -26,12 +24,9 @@
 
 </div>
 
-	<?php do_action( 'before_sidebar' ); ?>
-    <?php if ( ! dynamic_sidebar( 'primary-sidebar-two' ) ) : ?>
-	<?php endif; ?>
-
         <aside id="archives" class="widget">
-            <h3 class="sidebar-widget-title"><?php _e( 'Archives', 'shape' ); ?></h3>
+            <h3 class="widget-title"><?php _e( 'Archives', 'shape' ); ?></h3>
+			<hr>
             <ul>
                 <?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
             </ul>

@@ -9,8 +9,6 @@
 				<?php the_title();?>
 			</h2>
 
-			<img class="pages-profile-image" src="<?php the_field('profile-image');?>">
-
 			<span class="pages-content-main">
 				<?php the_content(); ?>
 			</span>
@@ -27,6 +25,29 @@
 
 	<?php get_sidebar('primary');?>
 
+</div>
+
+<div id="contact" class="lower-bottom-section">
+  <div class="call-to-action">
+	<h2>Call now to schedule a meetup or first walk!</h2>
+	<button href="dogsofnorthtexas.com" type="button" class="btn btn-outline-light"><img src="http://dogsofnorthtexas.com/wp-content/uploads/2019/07/phone-receiver.png" alt="phone-icon">Call Us Now</button>
+  </div>
+  <div class="contact-section">
+    <h3><?php the_field('bottom-section-heading'); ?></h3>
+    <p><?php the_field('bottom-section-text-area'); ?></p>
+	  <form id="name-form" class="contact-form cf-one" action="https://formspree.io/dogsofnorthtexas@gmail.com" method="POST">
+        <input class="name" type="text" name="Name" placeholder="Name" size="50" required>
+        <input class="email" type="email" name="Email" placeholder="Email" size="50" required>
+		<textarea class="message" name="Message" placeholder="Message" cols="50" rows="10"></textarea>
+        <input class="submit btn btn-outline-light" type="submit" value="SUBMIT">
+      </form>
+      <form id="name-form-mobile" class="contact-form cf-two" action="https://formspree.io/greenslugg@email.com" method="POST">
+        <input class="name-mobile" type="text" name="Name" placeholder="Name" size="35" required>
+        <input class="email-mobile" type="email" name="Email" placeholder="Email" size="35" required>
+		<textarea class="message-mobile" name="Message" placeholder="Message" cols="35" rows="10"></textarea>
+        <input class="submit-mobile btn btn-outline-light" type="submit" value="SUBMIT">
+      </form>
+  </div>
 </div>
 
 <?php get_footer();?>
