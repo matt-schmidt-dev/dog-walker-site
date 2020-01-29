@@ -4,28 +4,30 @@ document.querySelector('.nav-ul-list').classList.toggle('nav-active');
 	});
 
 
-
 //Parallax Header-Section
-$(window).scroll(function() {
+jQuery(window).scroll(function() {
   parallax();
 });
 
 function parallax() {
 
-  var wScroll = $(window).scrollTop();
+  var wScroll = jQuery(window).scrollTop();
 
-  $('.parallax--bg').css('background-position', 'center '+(wScroll*0.75)+'px');
-  $('.parallax--test').css('background-position', 'center '+(wScroll*0.5)+'px');
+  jQuery('.parallax--bg').css('background-position', 'center '+((-185+wScroll)*0.5)+'px');
+  /*jQuery('.parallax--test').css('background-position', 'center '+(wScroll*0.5)+'px');*/
 
 }
 
 
-
+/*
 //Smooth Scrolling Links
-$(document).ready(function() {
+jQuery(document).ready(function() {
 
-  $('.scroll').click(function(e){
+  jQuery('.menu-item-288').click(function(e){
     e.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000 );
+    jQuery('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000 );
 });
-});
+});*/
+
+
+

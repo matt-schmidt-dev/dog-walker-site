@@ -17,6 +17,30 @@ function tags_tinymce_fix( $init )
 add_filter('tiny_mce_before_init', 'tags_tinymce_fix');
 
 
+
+
+// function for inserting Google Analytics into the wp_head
+add_action('wp_head', 'ga');
+function ga() {
+   if ( !is_user_logged_in() ) { // not for logged in users
+?>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148501534-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148501534-1');
+</script>
+
+
+<?php
+   }
+}
+
+
+
+
 function additional_custom_styles() {
 
     /*Enqueue The Styles*/

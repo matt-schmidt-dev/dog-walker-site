@@ -1,8 +1,8 @@
 /*
-Theme Name: Dogs Of North Texas
-Theme URI: westonmedia.co/dogsofnorthtexas
+Theme Name: Dogs of North Texas
+Theme URI: mattschmidt.tech/dogsofnorthtexas
 Author: Matt Schmidt
-Author URI: westonmedia.co
+Author URI: mattschmidt.tech
 Description: Site for Customer Dogs of North Texas
 Version: 1.0
 Tags: Custom
@@ -10,7 +10,7 @@ Tags: Custom
 
 
 body {
-  font-family: 'Lora', serif;
+  font-family: 'Roboto', sans-serif;
   background-color: white;
   box-sizing: border-box;
   margin: 0;
@@ -22,6 +22,10 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 }
 
+h5, h6 {
+	color: #015c83;
+}
+
 nav {
   margin: auto;
   font-family: 'Oswald', sans-serif;
@@ -31,20 +35,13 @@ label {
   margin: auto 20px;
 }
 
-input {
-  display: block;
-  margin: 10px auto;
-  border-style: solid;
-  border-width: 1px;
-  padding: 10px;
-}
-
-textarea {
+input, textarea {
+	font-family: 'Roboto', sans-serif;
 	display: block;
-  margin: 10px auto;
-  border-style: solid;
-  border-width: 1px;
-  padding: 10px;
+	margin: 10px auto;
+	border-style: solid;
+	border-width: 1px;
+	padding: 10px;
 }
 
 button {
@@ -53,9 +50,7 @@ button {
 
 /********************Class********************/
 
-
 .header-above-nav {
-	/*background-color: #4caf50;*/
 	background-color: #03a9f4;
 	display: flex;
 	justify-content: space-between;
@@ -104,8 +99,9 @@ button {
 
 .header-section {
   height: 75vh;
-  background-size: cover;
-  background-position: top;
+  background-size: 100% auto;
+  background-position: center -92.5px;
+  background-repeat: no-repeat;
   color: white;
 	display:flex;
 	flex-direction: column;
@@ -115,21 +111,60 @@ button {
 
 .header-section-info {
   margin: auto;
-  width: 85%;
-  text-shadow: 2px 2px 5px black;
+  width: 65%;
+  text-shadow: 1px 1px 0 black;
   text-align: center;
+  letter-spacing: 3px;
+	
 }
 
 .header-section-info h2 {
 	font-size: 5em;
+	padding-bottom: 20px;
 }
 
-.header-section-info p {
-	font-size: 1.8em;
+.header-section-info h4 {
+	padding-bottom: 20px;
+	text-transform: none;
+}
+
+.header-section-info .btn {
+	margin-bottom: 10px;
 }
 
 .btn {
 	border-radius: 0;
+	text-transform: uppercase;
+}
+
+.btn-dark-bg-color-pri {
+	background-color: #03abf4;
+	border-color: #03abf4;
+	color: white;
+	text-shadow: 0 0 0 black;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+
+.btn-dark-bg-color-pri:hover {
+	background-color: white;
+	border-color: white;
+	color: #484848 !important;
+}
+
+.btn-dark-bg-color-sec {
+	border-color: white;
+	color: white;
+	cursor: pointer;
+	letter-spacing: 1px;
+	text-shadow: 0 0 2px black;
+}
+
+.btn-dark-bg-color-sec:hover {
+	background-color: white;
+	border-color: white;
+	color: #484848 !important;
+	text-shadow: 0 0 0 black;
 }
 
 #nav-container-box {
@@ -141,7 +176,7 @@ button {
 .nav-container {
   display: flex;
   justify-content: space-between;
-  max-width: 1000px;
+  max-width: 1250px;
   margin: 0 auto;
   padding-left: 35px;
   padding-right: 35px;
@@ -151,6 +186,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .burger {
@@ -196,8 +232,7 @@ button {
  }
 
 .menu-item a:hover {
-  color: #f04400;
-  opacity: 0.8;
+  color: #03abf4;
   text-decoration: none;}
 
 .middle-section {
@@ -231,6 +266,17 @@ button {
   box-shadow: -2px 2px 8px #484848;
 }
 
+.btn-light-bg-color {
+	border-color: black;
+	color: black;
+}
+
+.btn-light-bg-color:hover {
+	background-color: #03abf4;
+	border-color: #03abf4;
+	color: white;
+}
+
 .images-services {
   display: block;
   margin-left: auto;
@@ -245,8 +291,9 @@ button {
 	justify-content: center;
 	align-items: center;
 	max-width: 1250px;
-	padding: 50px 15px;
+	padding: 50px 35px 100px 35px;
 	height: auto;
+	width: 100%;
 }
 
 .about-info {
@@ -254,12 +301,12 @@ button {
 	flex-direction: column;
 	justify-content: center;
 	text-align: left;
-	margin-right: 15px;
-	width: 100%;
+	padding-right: 35px;
+	width: 50%;
 }
 
 .about-info h6 {
-
+	
 }
 
 .about-info h3 {
@@ -276,12 +323,12 @@ button {
 }
 
 .about-images {
-	margin-left: 15px;
+	padding-left: 25px;
 	display: grid;
   	grid-template-columns: repeat(12);
 	grid-template-rows: repeat(12);
 	grid-gap: 0;
-	width: 100%;
+	width: 50%;
 	height: 450px;
 }
 
@@ -291,21 +338,21 @@ button {
 }
 
 #abt-img-one {
-	background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_5854.jpg');
+	/*background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_5854.jpg');*/
 	background-position: top right;
 	grid-column: 4 / 13;
 	grid-row: 1 / 8;
 }
 
 #abt-img-two {
-	background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_6007.jpg');
+	/*background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_6007.jpg');*/
 	background-position: top;
 	grid-column: 5 / 12;
 	grid-row: 6 / 12;
 }
 
 #abt-img-three {
-	background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_6709-e1562462795989.jpg');
+	/*background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_6709-e1562462795989.jpg');*/
 	background-position: top right;
 	grid-column: 1 / 8;
 	grid-row: 4 / 10;
@@ -316,8 +363,7 @@ button {
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
-	max-width: 1250px;
-	margin: 0 15px 50px 15px;
+	margin: 10px auto 0 auto;
 }
 
 .ind-counter {
@@ -325,12 +371,17 @@ button {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 10px;
+	width: 25%;
+}
+
+.ind-counter h6 {
+	text-align: center;
+	margin-top: 10px;
 }
 
 .ind-counter img {
-	width: 75px;
-	height: auto;
+	height: 50px;
+	width: auto;
 }
 
 .bottom-section {
@@ -348,7 +399,7 @@ button {
   width: 100%;
   color: black;
   background-color: whitesmoke;
-	padding: 50px 15px;
+	padding: 100px 35px;
 }
 
 .support-heading p {
@@ -372,41 +423,9 @@ button {
 	background-position: top;
 }
 
-.pgi-one {
-	background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_6035-e1562473719366.jpg');
-}
-
-.pgi-two {
-	background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_5853.jpg');
-}
-
-.pgi-three {
-	background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_6767.jpg');
-}
-
-.pgi-four {
-	background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_6174.jpg');
-}
-
-.pgi-five {
-	background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_6395.jpg');
-}
-
-.pgi-six {
-	background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_5164.jpg');
-}
-
-.pgi-seven {
-	background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/8633c139-0a19-42e9-b320-cbba139d874c.jpg');
-}
-
-.pgi-eight {
-	background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_5110.jpg');
-}
-
 .testimonial-section-wrapper {
 	text-align: center;
-	padding: 50px 0;
+	padding: 100px 35px;
 }
 
 .testimonial-section {
@@ -451,17 +470,18 @@ button {
 
 .call-to-action {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	width: 90%;
+	width: 100%;
 	max-width: 1000px;
-	margin: 50px auto;
+	margin: 0 auto;
+	padding: 50px 35px;
 	color: whitesmoke;
 }
 
 .call-to-action h2 {
 	margin-bottom: 0;
-max-width: 65%;
+	max-width: 55%;
 	padding-right: 15px;
 }
 
@@ -471,6 +491,12 @@ max-width: 65%;
 	align-items: center;
 	font-size: 1.5em;
 }
+
+/*.call-to-action button:hover {
+	background-color: white;
+	border-color: #484848;
+	color: #484848;
+}*/
 
 .call-to-action button img {
 	width: 35px;
@@ -482,13 +508,12 @@ max-width: 65%;
   width: 100%;
   margin: auto;
   text-align: center;
-  background-image: url('http://dogsofnorthtexas.com/wp-content/uploads/2019/07/img_6706.jpg');
+  background-image: url('https://dogsofnorthtexas.com/wp-content/uploads/2020/01/matt-syd-scooter-medium.jpg');
 	background-size: cover;
 	background-position: top;
   background-color: #303030;
 	background-blend-mode: multiply;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding: 100px 35px;
 }
 
 .contact-section h3 {
@@ -500,10 +525,11 @@ max-width: 65%;
 }
 
 .footer-section {
-  height: 100px;
   padding: 10px;
   display: flex;
   flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	background-color: whitesmoke;
 }
 
@@ -515,9 +541,9 @@ max-width: 65%;
 }
 
 .social-media-icon {
-  height: 40px;
-  width: 40px;
-  margin: 5px;
+  height: 30px;
+  width: 30px;
+  margin: 10px;
 }
 
 /********************ID********************/
@@ -888,23 +914,29 @@ hr {
 
 /********************Media****************/
 
+@media (max-width: 1250px){
+	
+.header-section {
+  height: 75vh;
+  background-size: auto 125%;
+}
+	
+.header-section-info {
+  width: 75%;
+}
+}
 
 
 @media (max-width: 1000px) {
   body {}
 
-	.header-section-info h2 {
+.header-section-info h2 {
 		font-size: 3.5em;
-	}
-
-	.header-section-info p {
-	font-size: 1.5em;
 }
 
 .middle-section {
 	margin-top: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    
 	height: auto;
   }
 
@@ -915,7 +947,7 @@ hr {
     grid-gap: 0px;
     margin-left: auto;
     margin-right: auto;
-	width: 85%;
+	width: 100%;
   }
 
   .flex-services-box {
@@ -950,46 +982,53 @@ hr {
     border-color: gray;
     margin: 0;
   }
-
+	
 .about-snippet {
 	flex-direction: column;
-	width: 85%;
+	width: 100%;
+	padding-bottom: 75px;
 }
-
+	
 .about-info {
 	align-items: center;
 	text-align: center;
-	margin-right: 0;
+	padding: 0 0 20px 0;
 	margin-bottom: 10px;
+	width: 100%
 }
 
 .about-info p {
 }
 
 .about-images {
-	margin-left: 0;
+	padding-left: 0;
+	width: 100%
 }
 
 .about-images img {
 	width: 100%;
 }
-
+	
 .support-heading {
-	padding-right: 15px;
-    padding-left: 15px;
+	padding: 75px 35px;
 }
 
 .lower-bottom-section {
 	}
 
-.testimonial-section {
-	padding-left: 10px;
-	padding-right: 10px;
+.testimonial-section-wrapper {
+	padding: 75px 35px;
+}
+	
+.testimonial {
+		margin: 5px;
+		padding: 25px 10px ;
 }
 
-	.testimonial {
-		margin: 5px;
-	}
+	
+.contact-section {
+		padding: 75px 35px;
+}	
 
 .latests-posts-main-contain {
 	display: block;
@@ -1050,118 +1089,120 @@ hr {
 	font-size: 0.9em;
 	padding-right: 0;
 }
-
+	
 .header-social img {
 	margin: 5px 0;
 	width: 15px;
 	height: auto;
 }
-
+	
 .nav-container {
   padding-left: 15px;
   padding-right: 15px;
 }
-
+	
+.inside-nav-container {
+  justify-content: start;
+}
+	
 .burger {
 	display: block;
 }
-
+	
 .logo-image {
   width: 50px;
   margin: 5px 5px 0 0;
 }
-
+	
 .nav-ul-list {
 	display: none;
 	position: absolute;
-	top: 60px;
+	top: 110px;
 	left: 0;
-	right:0;
+	right: 0;
 	padding: 0;
 	height: auto;
 	width: 100%;
 	background-color: white;
 	z-index: 1;
 	}
-
+	
 .menu-item {
 	padding: 5px 0 5px 0;
 	text-align: center;
 }
-
+	
 .menu-item a {
-
+		
 }
-
+	
 .nav-active {
 	display: block;
-	position: absolute;
-	top: 60px;
-	left: 0;
-	right:0;
-	padding: 0;
-	height: auto;
-	width: 100%;
-	background-color: white;
-	z-index: 1;
 }
-
-.header-section {
+	
+.header-section-info {
+	width: 85%;
 	}
 
 .header-section-info h2 {
 	font-size: 3em;
   }
-
-.header-section-info p {
-	font-size: 1.2em;
-  }
-
+	
 .flex-services {
 	width: 100%;
 	padding-right: 15px;
 	padding-left: 15px;
 }
-
+	
 .flex-services-box {
     padding: 15px;
   }
-
+	
 .about-snippet {
 		width: 100%;
+	padding: 50px 15px;
 	}
-
+	
+.support-heading {
+	padding: 50px 15px;	
+}
+	
 .pup-grid {
 	grid-template-columns: repeat(2, 1fr);
 }
-
+	
+.testimonial-section-wrapper {
+	padding: 50px 15px;		
+}
+	
 .testimonial-section {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-
+	
 .testimonial {
 	max-width: 400px;
 }
-
+	
 .call-to-action {
 	flex-direction: column;
 	text-align: center;
+	padding: 50px 15px;
 }
 
 .call-to-action h2 {
 	max-width: 100%;
 	padding-right: 0;
 }
-
+	
 .call-to-action button {
 	margin-top: 15px;
 }
-
-.social-media-icon {
-    margin: 5px 3px 5px 3px;
-  }
+	
+.contact-section {
+		padding: 50px 15px;
+}
 
 .portfolio-heading {
     width: 85%;
@@ -1192,7 +1233,7 @@ hr {
 }
 
 @media (max-width: 475px) {
-
+	
 .header-above-nav {
 	padding-right: 10px;
 	padding-left: 10px;
@@ -1211,9 +1252,13 @@ hr {
 .header-contact p {
 	font-size: 0.9em;
 }
-
+	
 .header-social img {
 	margin: 0 0 2px 0;
+}
+	
+.nav-ul-list {
+	top: 130px;	
 }
 
  .header-section-info {
@@ -1223,19 +1268,19 @@ hr {
     height: 30px;
     width: 30px;
   }
-
+	
 .flex-services-box h4 {
 	font-size: 1.2rem;
 	}
-
+	
 .flex-services-box p {
 	font-size: 0.8rem;
 	}
-
+	
 .flex-services-box button {
 	font-size: 0.8rem;
 }
-
+	
 .pup-grid-item {
 	height: 150px;
 }
@@ -1245,11 +1290,11 @@ hr {
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
-
+	
 .about-images {
 	height: 300px;
 }
-
+	
 .lower-bottom-section {
 
 }
@@ -1327,16 +1372,16 @@ hr {
 	width: 150px;
 	border-radius: 50%;
 }
-
+	
 	.support-heading {
 	padding-right: 10px;
     padding-left: 10px;
 }
 
 }
-
+	
 @media (max-width: 400px) {
-
+	
 .about-images {
 	height: 250px;
 }

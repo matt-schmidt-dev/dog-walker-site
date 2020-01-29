@@ -2,17 +2,14 @@
 
 <div class="footer-section">
   <div class="social-media">
-    <a href="https://www.facebook.com/gregory.muhs">
+    <a href="https://www.facebook.com/dogsofnorthtexas">
       <img class="social-media-icon" src="https://image.flaticon.com/icons/svg/145/145802.svg" alt="facebook">
     </a>
-    <a href="https://twitter.com/GSMuse1">
+    <a href="https://twitter.com/dogsofnorthtexas">
       <img class="social-media-icon" src="https://image.flaticon.com/icons/svg/145/145812.svg" alt="twitter">
     </a>
-    <a href="https://www.instagram.com/westonmediaco">
+    <a href="https://www.instagram.com/dogsofnorthtexas">
       <img class="social-media-icon" src="https://image.flaticon.com/icons/svg/145/145805.svg" alt="instagram">
-    </a>
-	<a href="https://www.patreon.com/GreenSlugg">
-      <img class="social-media-icon" src="http://matthewtravisblog.com/wp-content/uploads/2019/02/patreon-icon-transparent-inside.png" alt="instagram">
     </a>
   </div>
 </div>
